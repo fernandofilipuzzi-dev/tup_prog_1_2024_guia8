@@ -58,7 +58,7 @@ namespace Ejercicio1
             Console.Clear();
             Console.WriteLine("\t\tMenú principal");
 
-            Console.WriteLine("\t1- Solicitar listado");
+            Console.WriteLine("\t1- Solicitar valor");
             Console.WriteLine("\t2- Mostrar listado ordenado");
             Console.WriteLine("\t3- Buscar valor");
 
@@ -71,16 +71,10 @@ namespace Ejercicio1
             Console.Clear();
             Console.WriteLine("\t\t Solicitud de listado de valores");
 
-            Console.WriteLine("ingrese valor(-1 sale)");
-            int val = Convert.ToInt32(Console.ReadLine());
-            while (val>-1)
-            {
-                CargarValor(val);
-
-                Console.WriteLine("ingrese valor(-1 sale)");
-                val = Convert.ToInt32(Console.ReadLine());
-            }
-
+            Console.WriteLine("Ingrese el valor:");
+            int val = Convert.ToInt32(Console.ReadLine());            
+            CargarValor(val);
+            
             Console.WriteLine("presione una tecla para salir");
             Console.ReadKey();
         }
