@@ -46,12 +46,13 @@ namespace Ejercicio2
 
         static void DeterminarAlumnosMayoresAlPromedio() 
         {
+            contadorMAP = 0;
             double promedioGeneral = CalcularPromedio();
             for (int n = 0; n < contador; n++)
             {
                 if (notas[n] >= promedioGeneral)
                 {
-                    AgregarAlumnoMayorAlPromedio( n);
+                    AgregarAlumnoMayorAlPromedio(n);
                 }
             }
         }
